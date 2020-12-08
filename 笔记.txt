@@ -1,0 +1,45 @@
+03.打包样式资源
+  1.新建文件
+  2.新建webpack.config.js 
+  3.下载打包所需要的包
+
+VSCode原有插件
+1. Easy Less 处理less文件，保存时候会自动转换成css文件
+2. Easy Sass 处理Sass文件，保存时候会自动转换成css文件
+3. ESLint 
+4. HTML CSS Support
+5. indent-rainbow
+6. IntelliSense for CSS 
+7. JavaScript(ES6) code snippets
+8. C#
+9. Bracket Pair Colorizer
+10.Code Runner
+11.C# XML Documentation Comments
+12.Auto Rename Tag
+13.Auto Close Tag
+14.Live Server
+15.NuGet Package Manager
+16.open in browser
+17.vscode-icons
+18.vscode-solution-explorer
+19.Path IntelliSense
+20.Vetur
+
+
+10.Css兼容性处理：
+在package.json中的这段配置文件，
+
+"browserslist":{
+  // 代表开发环境，兼容最近的 chrome Firefox safari 浏览器
+    "development":[
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    // 代表生成环境 
+    "production":[
+      ">0.2%",  // 兼容98%的浏览器
+      "not dead", // 但是不兼容已经死掉的浏览器
+      "not op_mini all"  // 不要兼容op_mini全部的浏览器
+    ]
+  }
